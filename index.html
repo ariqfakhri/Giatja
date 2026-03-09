@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giatja | Premium Corporate Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/6281234567890?text=Halo%20kami%20ingin%20bertanya%20tentang%20program%20Lapas%20Sukamiskin"
+    class="whatsapp-float"
+    target="_blank"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">GIAT<span>JA</span></a>
+        <div class="nav-links">
+          <a href="#home" data-en="Home" data-id="Beranda">Beranda</a>
+          <a href="#about" data-en="About" data-id="Tentang Kami"
+            >Tentang Kami</a
+          >
+          <a href="#program" data-en="Programs" data-id="Program">Program</a>
+          <a href="#gallery" data-en="Gallery" data-id="Galeri">Galeri</a>
+          <a href="#pengumuman">Pengumuman</a>
+          <a href="#contact" data-en="Contact" data-id="Kontak">Kontak</a>
+        </div>
+        <div class="nav-actions">
+          <button id="lang-switch" class="btn-icon">ID</button>
+          <button id="theme-toggle" class="btn-icon">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="menu-toggle">
+  <i class="fas fa-ellipsis-v"></i>
+  <div class="admin-dropdown">
+    <a href="login.html">Login Admin</a>
+  </div>
+</div>
+        </div>
+      </div>
+    </nav>
+    <header id="home" class="hero">
+      <div class="hero-slider">
+
+  <div class="slide active" style="background-image: url(https://tse3.mm.bing.net/th/id/OIP.KIOcBoYkKL1n87cL2YGnBAHaFO?pid=Api&P=0&h=180);"></div>
+
+  <div class="slide" style="background-image: url(https://tse1.mm.bing.net/th/id/OIP.wh5Y-4hNoG5sVC5bNw4_XwHaEC?pid=Api&P=0&h=180);"></div>
+
+  <div class="slide" style="background-image: url(https://tse2.mm.bing.net/th/id/OIP.UtRP69VKYU6yKdIQ2TV5OQHaEA?pid=Api&P=0&h=180);"></div>
+
+</div>
+
+<div class="hero-overlay"></div>
+
+<!-- tombol -->
+<div class="slider-controls">
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+</div>
+      <div class="hero-content container">
+        <h1 data-aos="fade-up">Lapas Kelas 1 Sukamiskin</h1>
+
+        <p data-aos="fade-up" data-aos-delay="200">Bidang Kegiatan Kerja</p>
+
+        <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+          <a href="#program" class="btn btn-primary">Program Kami</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Kami</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="split-layout">
+          <div class="about-text" data-aos="fade-right">
+            <h2
+              class="section-title"
+              data-en="About Giatja"
+              data-id="Tentang Giatja"
+            >
+              Tentang Giatja
+            </h2>
+            <p
+              data-en="We are a diversified industry leader committed to sustainable growth and community development through innovative solutions."
+              data-id="Kami adalah pemimpin industri terdiversifikasi yang berkomitmen pada pertumbuhan berkelanjutan dan pengembangan masyarakat melalui solusi inovatif."
+            >
+              Lapas Kelas I Sukamiskin merupakan lembaga pemasyarakatan yang
+              tidak hanya berfungsi sebagai tempat pembinaan, tetapi juga
+              mengembangkan bidang kegiatan kerja sebagai sarana pemberdayaan
+              warga binaan. Melalui program kerja seperti pertanian, peternakan,
+              perikanan, serta pelatihan keterampilan dan produksi kerajinan,
+              warga binaan dibekali kemampuan praktis yang bermanfaat setelah
+              masa pidana berakhir. Kegiatan kerja ini dirancang untuk
+              menumbuhkan kemandirian, tanggung jawab, dan etos kerja yang
+              positif. Dengan sistem pembinaan yang terarah, bidang kegiatan
+              kerja di Lapas Kelas I Sukamiskin menjadi salah satu upaya nyata
+              dalam mendukung proses reintegrasi sosial warga binaan ke
+              masyarakat.
+            </p>
+            <div class="vission-mission">
+              <div class="card-mini">
+                <i class="fas fa-eye"></i>
+                <h4 data-id="Visi">Visi</h4>
+                <p
+                  data-id="Mewujudkan warga binaan yang mandiri, produktif, dan berintegritas melalui pembinaan kerja."
+                >
+                  Mewujudkan warga binaan yang mandiri dan produktif.
+                </p>
+              </div>
+              <div class="card-mini">
+                <i class="fas fa-rocket"></i>
+                <h4 data-id="Misi">Misi</h4>
+                <p data-id="Mengembangkan keterampilan kerja yang aplikatif.">
+                  Mengembangkan keterampilan kerja yang aplikatif.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stats-dashboard" data-aos="fade-left">
+            <div class="chart-container">
+              <canvas id="productionChart"></canvas>
+            </div>
+            <div class="counters">
+              <div class="counter-item">
+                <h3 class="count" data-target="150">0</h3>
+                <p data-id="Kapal Selesai">Kapal Selesai</p>
+              </div>
+              <div class="counter-item">
+                <h3 class="count" data-target="2500">0</h3>
+                <p data-id="Hektar Tani">Hektar Tani</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="program section bg-light">
+      <div class="container">
+        <h2
+          class="section-title text-center"
+          data-aos="fade-up"
+          data-id="Program Unggulan"
+        >
+          Program Unggulan
+        </h2>
+        <div class="program-grid">
+          <div class="program-card" data-aos="zoom-in">
+            <div class="card-img">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.wYPaTFYTGAGBTz8k8yiGVQHaE8?pid=Api&P=0&h=180"
+                alt="Shipbuilding"
+              />
+            </div>
+            <div class="card-body">
+              <h3 data-id="Pembuatan Kapal">Pembuatan Kapal</h3>
+              <p
+                data-id="Konstruksi kapal modern dengan standar internasional."
+              >
+                Konstruksi kapal modern dengan standar internasional.
+              </p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 92%"></div>
+              </div>
+              <span class="label">92% Kapasitas Produksi</span>
+            </div>
+          </div>
+          <div class="program-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=600"
+                alt="Agriculture"
+              />
+            </div>
+            <div class="card-body">
+              <h3 data-id="Pertanian Terpadu">Pertanian Terpadu</h3>
+              <p
+                data-id="Sistem tani cerdas untuk ketahanan pangan berkelanjutan."
+              >
+                Sistem tani cerdas untuk ketahanan pangan berkelanjutan.
+              </p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+              <span class="label">85% Hasil Panen Optima</span>
+            </div>
+          </div>
+          <div class="program-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card-img">
+              <img src="img/gambar ikan.jpg" alt="Industry" />
+            </div>
+            <div class="card-body">
+              <h3 data-id="Inovasi Industri">Perikanan</h3>
+              <p data-id="Pengembangan manufaktur dan energi terbarukan.">
+                Pengembangan manufaktur dan energi terbarukan.
+              </p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 78%"></div>
+              </div>
+              <span class="label">78% Inovasi Baru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline section">
+      <div class="container">
+        <h2 class="section-title text-center" data-id="Perjalanan Kami">
+          Perjalanan Kami
+        </h2>
+        <div class="timeline-container">
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="time-dot"></div>
+            <div class="time-content">
+              <h3>2015</h3>
+              <p data-id="Pendirian Giatja dengan fokus galangan kapal kecil.">
+                Pendirian Giatja dengan fokus galangan kapal kecil.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="time-dot"></div>
+            <div class="time-content">
+              <h3>2018</h3>
+              <p data-id="Ekspansi ke sektor pertanian modern terintegrasi.">
+                Ekspansi ke sektor pertanian modern terintegrasi.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="time-dot"></div>
+            <div class="time-content">
+              <h3>2023</h3>
+              <p data-id="Menjadi salah satu produsen kapal kargo terbesar.">
+                Menjadi salah satu produsen kapal kargo terbesar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section bg-light">
+      <div class="container">
+        <h2 class="section-title text-center" data-id="Galeri Dokumentasi">
+          Galeri Dokumentasi
+        </h2>
+        <div class="masonry-grid">
+          <div class="grid-item" data-aos="fade-up">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=400"
+              alt="1"
+            />
+          </div>
+          <div class="grid-item" data-aos="fade-up">
+            <img
+              src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=400"
+              alt="2"
+            />
+          </div>
+          <div class="grid-item" data-aos="fade-up">
+            <img
+              src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=400"
+              alt="3"
+            />
+          </div>
+          <div class="grid-item" data-aos="fade-up">
+            <img
+              src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=400"
+              alt="4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="pengumuman" class="announcement section bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Pengumuman</h2>
+
+    <div class="announcement-grid">
+
+      <!-- PENGUMUMAN 1 -->
+      <div class="announcement-card">
+        <h3>Program Pelatihan Kerja 2026</h3>
+        <p>Pendaftaran program pelatihan kerja bidang pertanian dan perikanan telah dibuka.</p>
+        <button class="btn btn-outline" onclick="openModal('modal1')">
+          Baca Selengkapnya
+        </button>
+      </div>
+
+      <!-- PENGUMUMAN 2 -->
+      <div class="announcement-card">
+        <h3>Kerja Sama Mitra Industri</h3>
+        <p>Lapas Sukamiskin menjalin kerja sama produksi dengan mitra industri lokal.</p>
+        <button class="btn btn-outline" onclick="openModal('modal2')">
+          Baca Selengkapnya
+        </button>
+      </div>
+
+      <!-- PENGUMUMAN 3 -->
+      <div class="announcement-card">
+        <h3>Evaluasi Triwulan I</h3>
+        <p>Telah dilaksanakan evaluasi kegiatan kerja untuk meningkatkan kualitas produksi.</p>
+        <button class="btn btn-outline" onclick="openModal('modal3')">
+          Baca Selengkapnya
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h3>Program Pelatihan Kerja 2026</h3>
+    <p>
+      Program pelatihan kerja tahun 2026 meliputi bidang pertanian, perikanan,
+      dan keterampilan industri. Program ini bertujuan meningkatkan kompetensi
+      warga binaan agar siap kembali ke masyarakat dengan keahlian yang produktif.
+    </p>
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h3>Kerja Sama Mitra Industri</h3>
+    <p>
+      Kerja sama ini dilakukan untuk meningkatkan kualitas hasil produksi
+      warga binaan dan memperluas jaringan pemasaran produk kegiatan kerja.
+    </p>
+  </div>
+</div>
+
+<!-- MODAL 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h3>Evaluasi Triwulan I</h3>
+    <p>
+      Evaluasi dilakukan untuk memastikan program berjalan efektif,
+      meningkatkan produktivitas, dan memperbaiki sistem pembinaan kerja.
+    </p>
+  </div>
+</div>
+<section id="contact" class="contact section">
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <h2 data-id="Hubungi Kami">Hubungi Kami</h2>
+            <p data-id="Siap bekerja sama dengan Anda dalam proyek masa depan.">
+              Siap bekerja sama dengan Anda dalam proyek masa depan.
+            </p>
+            <ul class="contact-details">
+              <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+              <li><i class="fas fa-phone"></i> +62 21 1234 5678</li>
+              <li><i class="fas fa-envelope"></i> info@giatja.com</li>
+            </ul>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" data-aos="fade-left">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Lengkap" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-block"
+              data-id="Kirim Pesan"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo">GIAT<span>JA</span></a>
+            <p
+              data-id="Membangun kemandirian bangsa melalui industri terintegrasi."
+            >
+              Membangun kemandirian bangsa melalui industri terintegrasi.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4 data-id="Tautan">Tautan</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#program">Programs</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4 data-id="Berlangganan">Berlangganan</h4>
+            <div class="newsletter-box">
+              <input type="email" placeholder="Email" />
+              <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Giatja Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin - GIATJA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center; margin-top: 40px">Dashboard Admin</h2>
+
+    <div style="text-align: center; margin-top: 20px">
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+      // Cek apakah sudah login
+      if (localStorage.getItem("isAdminLoggedIn") !== "true") {
+        window.location.href = "login.html";
+      }
+
+      function logout() {
+        localStorage.removeItem("isAdminLoggedIn");
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>
